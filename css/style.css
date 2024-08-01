@@ -549,19 +549,29 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .main-nav .navbar-brand {
-  padding: 35px 40px 35px 50px;
+  padding: 10px;
   border-right: 1px solid #e5e5e5;
+}
+
+.main-nav .navbar-brand img{
+  height: 75px;
 }
 
 @media (max-width: 1024px) {
   .main-nav .navbar-brand {
-    padding: 20px 30px;
+    padding: 5px;
+  }
+  .main-nav .navbar-brand img{
+    height: 60px;
   }
 }
 
 @media (max-width: 767px) {
   .main-nav .navbar-brand {
     border-right: none;
+  }
+  .main-nav .navbar-brand img{
+    height: 55px;
   }
 }
 
@@ -1705,7 +1715,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .ticket-feature .block .timer .syotimer-cell {
-  margin-right: 25px;
+  margin-right: 15px;
   margin-bottom: 33px;
   display: inline-block;
 }
