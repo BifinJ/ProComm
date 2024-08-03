@@ -1,3 +1,11 @@
+*{
+  font-family: "Open Sans"
+}
+
+::-webkit-scrollbar{
+  width: 0
+}
+
 /*=== MEDIA QUERY ===*/
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Roboto:300,400,500,700");
 html {
@@ -199,7 +207,11 @@ button:hover {
 }
 
 .bg-banner-one {
-  background: url(../images/ProComm/hero_bg.jpg) no-repeat;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../images/ProComm/hero_bg.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -3513,5 +3525,10 @@ ul.pagination .active a {
   }
   .schedule .schedule-contents .schedule-item ul li .date{
     font-size: 0.9rem;
+  }
+  .timer{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
   }
 }
