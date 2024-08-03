@@ -5,6 +5,7 @@ html {
 }
 
 body {
+  width: 100vw !important;
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
@@ -946,7 +947,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .banner .block .timer .syotimer-cell .syotimer-cell__value {
-  min-width: 75px;
+  min-width: 55px;
   font-family: "Montserrat", sans-serif;
   font-size: 35px;
   line-height: 77px;
@@ -989,6 +990,11 @@ select.form-control:not([size]):not([multiple]) {
     font-size: 4rem;
   }
 }
+@media (max-width: 450px) {
+  .banner .block h1 {
+    font-size: 2rem;
+  }
+}
 
 .banner .block h2 {
   text-transform: uppercase;
@@ -1002,6 +1008,11 @@ select.form-control:not([size]):not([multiple]) {
 @media (max-width: 767px) {
   .banner .block h2 {
     font-size: 3.2rem;
+  }
+}
+@media (max-width: 450px) {
+  .banner .block h2 {
+    font-size: 1.75rem;
   }
 }
 
@@ -3472,7 +3483,12 @@ ul.pagination .active a {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  gap: 5px;
+  gap: 10px;
+}
+@media screen and (max-width: 450px) {
+  .action-button{
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 991px) {
