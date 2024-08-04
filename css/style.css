@@ -792,7 +792,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .footer-main {
-  background: #272735;
+  background: #00001f;
   padding: 90px 0;
 }
 
@@ -3729,8 +3729,11 @@ ul.pagination .active a {
     width: 300px;
     height: 175px;
   }
+  .contact-card-inner{
+    padding: 25px;
+  }
   .contact-card-inner p{
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 360px) {
@@ -3742,4 +3745,18 @@ ul.pagination .active a {
     width: 75px;
     height: 75px;
   }
+  .contact-card-inner{
+    padding: 10px;
+  }
+  .contact-card-inner p{
+    font-size: 0.9rem;
+  }
+}
+
+.footer-logo{
+  width: 80%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
