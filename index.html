@@ -35,6 +35,15 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
 
   <body class="body-wrapper">
@@ -84,15 +93,15 @@
 
     <!-- hero -->
 
-    <section class="banner bg-banner-one overlay">
+    <section class="banner bg-banner-one overlay" data-aos="fade-up">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
             <div class="block">
-              <div class="timer"></div>
-              <h1>IEEE COMSOC KC</h1>
-              <h2>PROCOMM 2024</h2>
+              <h1>PROCOMM 2024</h1>
+              <h2>IEEE COMSOC KC</h2>
               <h6>21 September 2024</h6>
+              <div class="timer"></div>
               <div class="action-button">
                 <a
                   href="#"
@@ -112,7 +121,7 @@
 
     <!-- about -->
 
-    <section class="section about" id="about-procomm">
+    <section class="section about" data-aos="fade-up" id="about-procomm">
       <div class="container">
         <div class="row">
           <div class="col-lg-4 col-md-6 align-self-center">
@@ -130,17 +139,23 @@
               <h2>About <span class="alternate">PROCOMM</span></h2>
               <div class="description-one">
                 <p>
-                  PROCOMM is a technical project competition organised by IEEE
-                  ComSoc Kerala Chapter for providing undergraduate students a
-                  platform to showcase their innovative ideas and bring them to
-                  life.
+                  IEEE Communication Project Competition, PROCOMM is the
+                  flagship event of the IEEE ComSoc Kerala Chapter with
+                  participation from students all over Kerala. The competition
+                  consists of two rounds. In the initial online round,
+                  applicants will submit abstracts based on the provided problem
+                  statements. Shortlisted participants will then advance to the
+                  offline hackathon round, where they can build and demonstrate
+                  their projects before a distinguished judging panel. IEEE SB
+                  RIT hosted the Final Round of PROCOMM 23 on the 2nd of
+                  October, 2023.
                 </p>
               </div>
               <ul class="list-inline">
                 <li class="list-inline-item">
                   <a
                     href="#"
-                    class="btn btn-main-md"
+                    class="btn btn-main-md-about"
                     style="text-decoration: line-through; pointer-events: none"
                     >Register Now</a
                   >
@@ -654,31 +669,29 @@
     </section> -->
 
     <!-- prize pool -->
-    <section class="prize-pool" id="prize-pool">
+    <section class="prize-pool" data-aos="fade-up" id="prize-pool">
       <h1 class="prize-heading">Prize Pool</h1>
       <div class="prizes">
-        <div class="prize prize-main-1">
+        <div class="prize prize-main-1" data-aos="fade-right">
           <img src="images/ProComm/1st.png" alt="" />
           <h3>First Prize</h3>
           <p>&#8377;12000/-</p>
         </div>
-        <div class="prize-main-2">
-          <div class="prize prize-2">
-            <img src="images/ProComm/2nd.png" alt="" />
-            <h3>Second Prize</h3>
-            <p>&#8377;9000/-</p>
-          </div>
-          <div class="prize prize-3">
-            <img src="images/ProComm/3rd.png" alt="" />
-            <h3>Third Prize</h3>
-            <p>&#8377;7000/-</p>
-          </div>
+        <div class="prize prize-2" data-aos="fade-up">
+          <img src="images/ProComm/2nd.png" alt="" />
+          <h3>Second Prize</h3>
+          <p>&#8377;9000/-</p>
+        </div>
+        <div class="prize prize-3" data-aos="fade-left">
+          <img src="images/ProComm/3rd.png" alt="" />
+          <h3>Third Prize</h3>
+          <p>&#8377;7000/-</p>
         </div>
       </div>
     </section>
 
     <!-- contact -->
-    <section class="contact-page" id="contact">
+    <section class="contact-page" data-aos="fade-up" id="contact">
       <h1 class="contact-heading">Contact</h1>
       <div class="contacts">
         <div class="contact-card">
@@ -715,7 +728,7 @@
 
     <!-- Footer -->
 
-    <footer class="footer-main">
+    <footer class="footer-main" data-aos="fade-up">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -799,5 +812,9 @@
     <script type="text/javascript" src="plugins/google-map/gmap.js"></script>
     <!-- Custom Script -->
     <script src="js/custom.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
