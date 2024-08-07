@@ -227,7 +227,7 @@ button:hover {
   /* background: url(../images/ProComm/hero_bg.jpg); */
   background-blend-mode: color-burn;
   background-size: cover;
-  background-position: center center;
+  background-position: center;
 }
 
 .bg-banner-two {
@@ -590,11 +590,16 @@ select.form-control:not([size]):not([multiple]) {
 
 .main-nav .navbar-brand {
   padding: 10px;
+  padding-left: 30px;
   border-right: 1px solid #e5e5e5;
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .main-nav .navbar-brand img{
-  width: 150px;
+  width: 260px;
+  scale: 1.2;
 }
 
 @media (max-width: 1024px) {
@@ -603,6 +608,8 @@ select.form-control:not([size]):not([multiple]) {
   }
   .main-nav .navbar-brand img{
     height: 60px;
+    scale: 1.1;
+    padding-left: 50px;
   }
 }
 
@@ -611,7 +618,9 @@ select.form-control:not([size]):not([multiple]) {
     border-right: none;
   }
   .main-nav .navbar-brand img{
+    scale: 0.8;
     height: 55px;
+    padding-left: 10px;
   }
 }
 
