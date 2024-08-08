@@ -623,6 +623,19 @@ select.form-control:not([size]):not([multiple]) {
     padding-left: 10px;
   }
 }
+@media (max-width: 375px) {
+  .navbar{
+    padding: 10px !important;
+  }
+  .navbar-brand{
+    margin-right: 0 !important;
+  }
+  .navbar>.container-fluid{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}
 
 .main-nav .navbar-nav .nav-item {
   position: relative;
@@ -3710,12 +3723,12 @@ ul.pagination .active a {
 }
 
 .contact-card-inner h4{
-  color: #fff;
+  color: #092635;
   font-family: "Nunito", sans-serif;
 }
 
 .contact-card-inner p{
-  color: #fff;
+  color: #092635;
   font-size: 1rem;
 }
 
